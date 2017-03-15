@@ -1,0 +1,92 @@
+.sticky {
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+
+/*! responsive-nav.js 1.0.39 by @viljamis */
+
+.navMenu {
+	z-index: 10;
+}
+
+.nav-collapse ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  list-style: none;
+  text-align: center;
+}
+
+.nav-collapse li {
+  width: 100%;
+  display: block;
+}
+
+.nav-collapse ul li {
+	border: 1px solid white;
+}
+
+
+.nav-collapse li a {
+  background: $color-nav;
+  padding: .7em 0;
+  display: block;
+  text-align: center;
+}
+
+.nav-collapse li a:hover {
+  background: $color-nav-hover;
+}
+
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.nav-collapse.opened {
+  max-height: 9999px;
+}
+
+.nav-toggle {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  width: 36px;
+  height: 36px;
+  float: right;
+  margin-right: 6%;
+  background-image: url(../images/ic_menu_white_36px.svg);
+  /*hide text*/
+  text-indent: 110%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 40em) {
+  .js .nav-collapse {
+    position: relative;
+  }
+  .js .nav-collapse.closed {
+    max-height: none;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .nav-collapse ul {
+    display: flex;
+  }
+  .nav-collapse ul li {
+    border-bottom: none;
+  }
+}

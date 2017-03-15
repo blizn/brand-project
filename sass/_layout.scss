@@ -1,0 +1,306 @@
+body {
+  background: $color-background;
+  margin: 0;
+}
+
+body:before {
+  content: "";
+  position: fixed;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, .8);
+  -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, .8);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, .8);
+  z-index: 100;
+}
+
+header,
+footer {
+  margin: 0 auto;
+  width: 88%;
+  max-width: 1080px;
+  min-height: 250px;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+
+
+.wrapper {
+  background: $color-background;
+  padding: 1em 0;
+}
+
+.koru {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+//////// Section's ////////
+.section-1,
+.section-2,
+.section-3,
+.section-4 {
+  margin: 0 auto;
+  padding: 1em;
+  width: 88%;
+}
+
+.section-1 .circle,
+.section-2 .circle,
+.section-3 .circle,
+.section-4 .circle {
+  margin: 0 auto;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  border-radius: 50%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 5em;
+  background: $color-content;
+  border: 2px solid transparent;
+  &:hover {
+    background: $color-content-hover;
+    border: 2px solid white;
+  }
+}
+
+//////// Section 1 ////////
+.section-1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.section-1 .heading {
+  text-align: center;
+}
+
+.section-1 .main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-1 .circle .textarea {
+  margin: 0 auto;
+  padding: 1em;
+}
+
+//////// Section 2 ////////
+.section-2 .heading {
+  text-align: center;
+}
+
+.section-2 .main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-2 .gallery {
+  display: flex;
+  padding: 1em;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.section-2 .gallery2 {
+  display: flex;
+  padding: 1em;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.section-2 .gallery-1 {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-image: url(../images/logo-1.jpg);
+  filter: brightness(0.7)
+}
+
+.section-2 .gallery-2 {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-image: url(../images/logo-2.png);
+  filter: brightness(0.7)
+}
+
+.section-2 .gallery-3 {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-image: url(../images/logo-3.png);
+  filter: brightness(0.7)
+}
+
+.section-2 .gallery-4 {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-image: url(../images/logo-4.jpg);
+  filter: brightness(0.7)
+}
+
+.section-2 .gallery-5 {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-image: url(../images/logo-5.jpg);
+  filter: brightness(0.7)
+}
+
+.section-2 .gallery-6 {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-image: url(../images/logo-6.jpg);
+  filter: brightness(0.7)
+}
+
+.section-2 .gallery-1:hover {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-image: url(../images/logo-1.jpg);
+  filter: brightness(1)
+}
+
+.section-2 .gallery-2:hover {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-image: url(../images/logo-2.png);
+  filter: brightness(1)
+}
+
+.section-2 .gallery-3:hover {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-image: url(../images/logo-3.png);
+  filter: brightness(1)
+}
+
+.section-2 .gallery-4:hover {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-image: url(../images/logo-4.jpg);
+  filter: brightness(1)
+}
+
+.section-2 .gallery-5:hover {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-image: url(../images/logo-5.jpg);
+  filter: brightness(1)
+}
+
+.section-2 .gallery-6:hover {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-image: url(../images/logo-6.jpg);
+  filter: brightness(1)
+}
+
+//////// Section 3 ////////
+.section-3 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.section-3 .heading {
+  text-align: center;
+}
+
+.section-3 .content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 1em;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-3 .content div {
+  margin: 0 auto;
+}
+
+//////// Section 4 ////////
+.section-4 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.section-4 .heading {
+  text-align: center;
+}
+
+//Media Queries
+@media screen and (max-width: 48em) {
+  header {
+    min-height: 110px;
+  }
+  .section-1,
+  .section-2,
+  .section-3,
+  .section-4 {
+    margin: 0 auto;
+    padding: 1em;
+    width: 100%;
+  }
+  .section-1 .circle,
+  .section-2 .circle,
+  .section-3 .circle,
+  .section-4 .circle {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    border-radius: 50%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    background: $color-content;
+    border: 2px solid transparent;
+    &:hover {
+      background: $color-content-hover;
+      border: 2px solid white;
+    }
+  }
+  .section-1 .circle .textarea {
+    margin: 0 auto;
+    padding: 0.5em;
+  }
+  .section-2 .main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .section-2 .gallery,
+  .section-2 .gallery2 {
+    display: none;
+  }
+  .section-2 .gallery-1,
+  .section-2 .gallery-2,
+  .section-2 .gallery-3,
+  .section-2 .gallery-4,
+  .section-2 .gallery-5,
+  .section-2 .gallery-6 {
+    display: none;
+    background-image: url(../images/logo-tail.jpg);
+  }
+}

@@ -1,0 +1,44 @@
+body {
+  font-size: 16px;
+  font-family: $font-roboto;
+}
+
+h1 {}
+
+h2 {
+  color: $color-heading;
+  font-family: $font-bitter;
+  font-size: 48px;
+}
+
+h3 {
+  color: $color-text;
+  font-family: $font-bitter;
+  font-size: 22px;
+}
+
+p {
+  color: $color-text;
+  font-family: $font-roboto;
+}
+
+.circle-text {
+  font-size: 36px;
+  color: $color-text;
+  font-family: $font-bitter;
+}
+
+//Media Queries
+@media screen and (max-width: 48em) {
+  h2 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 12px;
+  }
+  .circle-text {
+    font-size: 16px;
+    color: $color-text;
+    font-family: $font-roboto;
+  }
+}

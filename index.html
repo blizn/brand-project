@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Brand Guidelines</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bitter:400i" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="Logo">
+      <h1>Air New Zealand</h1>
+    </div>
+<!--     <div class="koru">
+      <img src="images/koru.png" alt="koru">
+    </div> -->
+  </header>
+  <!-- --------------------------------------------------------- -->
+  <div class="navMenu">
+    <nav class="nav-collapse">
+      <ul>
+        <li><a data-scroll href="#">Home</a></li>
+        <li><a data-scroll href="#mission">Mission</a></li>
+        <li><a data-scroll href="#logo">Logo</a></li>
+        <li><a data-scroll href="#wordmark">Wordmark</a></li>
+        <li><a data-scroll href="#branding">Branding</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!-- --------------------------------------------------------- -->
+  <div class="wrapper">
+    <div class="container">
+      <!-- ------------------------- -->
+      <div class="section-1" id="mission">
+        <div class="heading">
+          <h2>Mission Statement</h2>
+        </div>
+        <div class="main">>
+          <div class="circle">
+            <div class="textarea">
+              <p class="circle-text">The Air New Zealand Group operates a global network that provides air passenger services and cargo transport services
+              </p>
+            </div>
+          </div>
+          <div class="circle">
+            <div class="textarea">
+              <p class="circle-text">to, from and within New Zealand to more than 15 million passengers a year.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- --------------------------------------------------------- -->
+      <div class="parallax">
+      </div>
+      <!-- ------------------------- -->
+      <div class="section-2" id="logo">
+        <div class="heading">
+          <h2>Logo Design</h2>
+        </div>
+        <div class="main">
+          <div class="circle">
+            <p class="circle-text">Air New Zealand uses the iconic koru symbol for most of its imagery and logo. The koru symbol is displayed on the tails of their planes, logo and on the uniforms of employees.
+            </p>
+          </div>
+          <div class="circle">
+            <p class="circle-text">The silver fern is also used as imagery, around the airports and on the planes.
+          </div>
+        </div>
+        <div class="gallery">
+          <div class="gallery-1">
+          </div>
+          <div class="gallery-2">
+          </div>
+          <div class="gallery-3">
+          </div>
+        </div>
+        <div class="gallery2">
+          <div class="gallery-4">
+          </div>
+          <div class="gallery-5">
+          </div>
+          <div class="gallery-6">
+          </div>
+        </div>
+        <div class="flickity">
+          <div><img src="images/logo-1.jpg" alt="logo"></div>
+          <div><img src="images/logo-2.jpg" alt="logo"></div>
+          <div><img src="images/logo-3.jpg" alt="logo"></div>
+          <div><img src="images/logo-4.jpg" alt="logo"></div>
+          <div><img src="images/logo-5.jpg" alt="logo"></div>
+          <div><img src="images/logo-6.jpg" alt="logo"></div>
+        </div>
+      </div>
+      <!-- ------------------------- -->
+      <div class="parallax2">
+      </div>
+      <!-- ------------------------- -->
+      <div class="section-3" id="wordmark">
+        <div class="heading">
+          <h2>Wordmark Development</h2>
+        </div>
+<!--         <div class="circle">
+          <p class="circle-text">Filler
+          </p>
+        </div> -->
+        <div class="content">
+          <div>
+            <img src="images/logoTypeface.jpg">
+          </div>
+          <div>
+            <img src="images/typeface.jpg">
+            <p>Custom typeface development with <a class="body-link" href="klim.co.nz">klim.co.nz</a></p>
+          </div>
+        </div>
+      </div>
+      <!-- ------------------------- -->
+      <div class="parallax3">
+      </div>
+      <!-- ------------------------- -->
+<!--       <div class="section-4" id="section4">
+        <div class="heading">
+          <h2>Section 4</h2>
+        </div>
+        <div class="circle">
+          <p class="circle-text">Filler
+          </p>
+        </div>
+      </div> -->
+      <!-- ------------------------- -->
+    </div>
+  </div>
+  <!-- --------------------------------------------------------- -->
+  <footer>
+    <h3>Contact</h3>
+    <p>
+    </p>
+  </footer>
+  <!-- Responsive Nav -->
+  <script src="responsive-nav.min.js"></script>
+  <script>
+  var navigation = responsiveNav(".nav-collapse", {
+    insert: 'after'
+  });
+  </script>
+  <!-- Sticky Nav -->
+  <script>
+  var nav, offset
+
+  nav = document.querySelector('.navMenu')
+  offset = nav.offsetTop
+    // On scroll trigger script
+  window.addEventListener('scroll', function() {
+    // When element has reached the top of the window trigger script
+    if (this.pageYOffset >= offset) {
+      nav.classList.add('sticky')
+    } else {
+      nav.classList.remove('sticky')
+    }
+    // console.log(this.pageYOffset)
+  })
+  </script>
+  <!------------------------- Flickity Script -->
+  <script src="flickity.min.js"></script>
+  <script>
+  var elem = document.querySelector('.flickity');
+  var flkty = new Flickity(elem, {
+    contain: true,
+    wrapAround: true
+  });
+  </script>
+  <!------------------------- Smothe scroll Script -->
+  <script src="smooth-scroll.js"></script>
+  <script>
+  smoothScroll.init({
+    offset: 40
+  });
+  </script>
+  <script>
+  var nav, offset
+
+  nav = document.querySelector('.navMenu')
+  offset = nav.offsetTop
+    // On scroll trigger script
+  window.addEventListener('scroll', function() {
+    // When element has reached the top of the window trigger script
+    if (this.pageYOffset >= offset) {
+      nav.classList.add('sticky')
+    } else {
+      nav.classList.remove('sticky')
+    }
+    // console.log(this.pageYOffset)
+  })
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+.parallax {
+  height: 400px;
+  width: 100%;
+  background-image: url(../images/parallax.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.parallax2 {
+  height: 400px;
+  width: 100%;
+  background-image: url(../images/parallax2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.parallax3 {
+  height: 400px;
+  width: 100%;
+  background-image: url(../images/parallax3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.Logo {
+  height: 300px;
+  width: 900px;
+  background: url(../images/headerInvert.jpg);
+}
+
+.Logo h1 {
+  /*display: none;*/
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.section-3 .content div img {
+    max-width: 100%;
+    height: auto;
+  }
+
+//Media Queries
+@media screen and (max-width: 48em) {
+  .Logo {
+    height: 100px;
+    width: 360px;
+    background: url(../images/headerInvertSmall.jpg);
+  }
+
+  .parallax {
+    height: 200px;
+    width: 100%;
+    background-image: url(../images/parallax.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+
+    .parallax2 {
+    height: 200px;
+    width: 100%;
+    background-image: url(../images/parallax2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+}
