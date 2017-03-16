@@ -233,7 +233,7 @@ footer {
     border-radius: 50%;
     margin-top: 1em;
     margin-bottom: 1em;
-    padding: 0.5em;
+    padding: 2em;
     background: #202020;
     border: 2px solid transparent; }
     .section-1 .circle:hover,
@@ -251,6 +251,10 @@ footer {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap; }
+
+  .section-2 .circle .textarea {
+    margin: 0 auto;
+    padding: 0.5em; }
 
   .section-2 .gallery,
   .section-2 .gallery2 {
